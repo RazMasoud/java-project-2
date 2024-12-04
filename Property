@@ -1,0 +1,44 @@
+
+package real.estate;
+
+ public class Property {
+    private double area; 
+    private int numberOfRooms;
+    private String neighborhood;
+    private double price;
+
+   
+    public Property(double area, int numberOfRooms, String neighborhood, double price) {
+        this.area = area;
+        this.numberOfRooms = numberOfRooms;
+        this.neighborhood = neighborhood;
+        this.price = price;
+    }
+
+   
+    public double getArea() {
+        return area;
+    }
+
+    public int getNumberOfRooms() {
+        return numberOfRooms;
+    }
+
+    public String getNeighborhood() {
+        return neighborhood;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+   
+    public void displayInfo() {
+        System.out.println("Property Type: " + this.getClass().getSimpleName());
+        System.out.println("Area: " + area + " m2");
+        System.out.println("Number of Rooms: " + numberOfRooms);
+        System.out.println("Neighborhood: " + neighborhood);
+        System.out.println("Price: $" + price);
+    }
+}
+

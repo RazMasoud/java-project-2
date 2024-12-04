@@ -1,0 +1,21 @@
+
+package real.estate;
+
+class Apartment extends Property {
+    private int floorNumber;
+    private boolean hasParkingLot;
+
+    // Constructor
+    public Apartment(double area, int numberOfRooms, String neighborhood, double price, int floorNumber, boolean hasParkingLot) {
+        super(area, numberOfRooms, neighborhood, price); 
+        this.floorNumber = floorNumber;
+        this.hasParkingLot = hasParkingLot;
+    }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Floor Number: " + floorNumber);
+        System.out.println("Has Parking Lot: " + (hasParkingLot ? "Yes" : "No"));
+    }
+}

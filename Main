@@ -1,0 +1,28 @@
+
+package realestate;
+
+
+ public class Main {
+    public static void main(String[] args) {
+        RealEstateAgency agency = new RealEstateAgency();
+
+     
+        Property villa = new Villa(300, 5, "Green Meadows", 500000, true, 2);
+        Property apartment = new Apartment(120, 3, "Downtown", 200000, 8, true);
+        Property furnishedApartment = new FurnishedApartment(90, 2, "City Center", 150000, 4);
+
+   
+        agency.addProperty(villa);
+        agency.addProperty(apartment);
+        agency.addProperty(furnishedApartment);
+
+   
+        System.out.println("List of Properties:");
+        agency.displayProperties();
+
+     
+        agency.removeProperty(1);
+        System.out.println("After Removal:");
+        agency.displayProperties();
+    }
+}

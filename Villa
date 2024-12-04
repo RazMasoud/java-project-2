@@ -1,0 +1,21 @@
+
+package real.estate;
+
+class Villa extends Property {
+    private boolean hasSwimmingPool;
+    private int numberOfAdjacentStreets;
+
+  
+    public Villa(double area, int numberOfRooms, String neighborhood, double price, boolean hasSwimmingPool, int numberOfAdjacentStreets) {
+        super(area, numberOfRooms, neighborhood, price); 
+        this.hasSwimmingPool = hasSwimmingPool;
+        this.numberOfAdjacentStreets = numberOfAdjacentStreets;
+    }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo(); 
+        System.out.println("Has Swimming Pool: " + (hasSwimmingPool ? "Yes" : "No"));
+        System.out.println("Number of Adjacent Streets: " + numberOfAdjacentStreets);
+    }
+}

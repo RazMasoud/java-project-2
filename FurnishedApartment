@@ -1,0 +1,18 @@
+
+package real.estate;
+
+class FurnishedApartment extends Property {
+    private int furnitureQuality; 
+
+  
+    public FurnishedApartment(double area, int numberOfRooms, String neighborhood, double price, int furnitureQuality) {
+        super(area, numberOfRooms, neighborhood, price); 
+        this.furnitureQuality = furnitureQuality;
+    }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo(); 
+        System.out.println("Furniture Quality: " + furnitureQuality + "/5");
+    }
+}
